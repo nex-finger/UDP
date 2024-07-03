@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ConsoleUDP2/1.0.0": {
+        "dependencies": {
+          "UDPtest": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleUDP2.dll": {}
+        }
+      },
+      "UDPtest/1.0.0": {
+        "runtime": {
+          "UDPtest.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleUDP2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UDPtest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

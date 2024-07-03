@@ -1,0 +1,72 @@
+メソッド定義
+csharp
+コードをコピーする
+public static int Comm()
+public: 他のクラスからもこのメソッドにアクセス可能。
+static: このメソッドはクラスメソッドであり、インスタンスを作成しなくても呼び出せる。
+int: このメソッドは整数を返す。
+Comm(): メソッド名。
+UDPクライアントの作成
+csharp
+コードをコピーする
+UdpClient udpClient = new UdpClient();
+UdpClient クラスのインスタンス udpClient を作成します。このインスタンスは、UDPプロトコルを使ってデータを送受信するために使用します。
+tryブロック
+csharp
+コードをコピーする
+try
+try ブロック内のコードは、例外が発生した場合に catch ブロックでその例外をキャッチするために使用されます。
+メッセージの送信
+csharp
+コードをコピーする
+// 送信メッセージ
+string message = "Hello, Program B!";
+byte[] sendBytes = Encoding.UTF8.GetBytes(message);
+送信するメッセージを文字列で定義します。
+Encoding.UTF8.GetBytes メソッドを使って、文字列をバイト配列に変換します。
+csharp
+コードをコピーする
+// 127.0.0.1、ポート50000にメッセージを送信
+IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 50000);
+udpClient.Send(sendBytes, sendBytes.Length, remoteEndPoint);
+Console.WriteLine($"Sent: {message}");
+IPAddress.Parse を使って、127.0.0.1 (ローカルホスト) のIPアドレスを取得します。
+IPEndPoint を使って、送信先のエンドポイント (IPアドレスとポート番号の組み合わせ) を定義します。
+udpClient.Send メソッドを使って、定義したエンドポイントにメッセージを送信します。
+送信したメッセージをコンソールに表示します。
+メッセージの受信
+csharp
+コードをコピーする
+// 返答を受信
+IPEndPoint receiveEndPoint = new IPEndPoint(IPAddress.Any, 0);
+byte[] receiveBytes = udpClient.Receive(ref receiveEndPoint);
+string returnMessage = Encoding.UTF8.GetString(receiveBytes);
+Console.WriteLine($"Received: {returnMessage}");
+IPAddress.Any を使って、任意のIPアドレスからのデータを受信するエンドポイントを定義します。
+udpClient.Receive メソッドを使って、データを受信し、バイト配列として格納します。このメソッドはブロッキングメソッドで、データが受信されるまで待機します。
+Encoding.UTF8.GetString メソッドを使って、受信したバイト配列を文字列に変換します。
+受信したメッセージをコンソールに表示します。
+例外処理
+csharp
+コードをコピーする
+catch (Exception e)
+{
+    Console.WriteLine(e.ToString());
+}
+catch ブロックで、try ブロック内で発生した例外をキャッチします。
+発生した例外の情報をコンソールに表示します。
+リソースの解放
+csharp
+コードをコピーする
+finally
+{
+    udpClient.Close();
+}
+finally ブロックは、例外の有無に関係なく必ず実行されます。
+udpClient.Close メソッドを使って、udpClient のリソースを解放します。
+戻り値
+csharp
+コードをコピーする
+return 0;
+メソッドが整数値 0 を返します。これは、通常、正常終了を示します。
+このコードは、基本的なUDP通信を実現するシンプルな例です。メッセージの送信、受信、および例外処理を行い、リソースを適切に解放することが含まれています。

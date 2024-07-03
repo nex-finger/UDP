@@ -1,0 +1,10 @@
+D:\UDPtest\ConsoleUDP\ConsoleUDP\bin\Debug\ConsoleUDP.exe.config
+D:\UDPtest\ConsoleUDP\ConsoleUDP\bin\Debug\ConsoleUDP.exe
+D:\UDPtest\ConsoleUDP\ConsoleUDP\bin\Debug\ConsoleUDP.pdb
+D:\UDPtest\ConsoleUDP\ConsoleUDP\bin\Debug\UDPtest.dll
+D:\UDPtest\ConsoleUDP\ConsoleUDP\bin\Debug\UDPtest.pdb
+D:\UDPtest\ConsoleUDP\ConsoleUDP\obj\Debug\ConsoleUDP.csproj.AssemblyReference.cache
+D:\UDPtest\ConsoleUDP\ConsoleUDP\obj\Debug\ConsoleUDP.csproj.CoreCompileInputs.cache
+D:\UDPtest\ConsoleUDP\ConsoleUDP\obj\Debug\ConsoleUDP.csproj.Up2Date
+D:\UDPtest\ConsoleUDP\ConsoleUDP\obj\Debug\ConsoleUDP.exe
+D:\UDPtest\ConsoleUDP\ConsoleUDP\obj\Debug\ConsoleUDP.pdb

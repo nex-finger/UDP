@@ -1,0 +1,11 @@
+D:\UDPtest\UDPtest\UDPtest\bin\Debug\net8.0\UDPtest.deps.json
+D:\UDPtest\UDPtest\UDPtest\bin\Debug\net8.0\UDPtest.dll
+D:\UDPtest\UDPtest\UDPtest\bin\Debug\net8.0\UDPtest.pdb
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\UDPtest.GeneratedMSBuildEditorConfig.editorconfig
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\UDPtest.AssemblyInfoInputs.cache
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\UDPtest.AssemblyInfo.cs
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\UDPtest.csproj.CoreCompileInputs.cache
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\UDPtest.dll
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\refint\UDPtest.dll
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\UDPtest.pdb
+D:\UDPtest\UDPtest\UDPtest\obj\Debug\net8.0\ref\UDPtest.dll
